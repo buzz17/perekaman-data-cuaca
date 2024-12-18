@@ -1,0 +1,34 @@
+CRITICAL - 2024-11-19 06:10:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/monitoring/meteo1.php"
+[Method: GET, Route: monitoring-laporan/data-meteorologi]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/monitoring/meteo1.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/meteo1', [], true)
+ 3 APPPATH\Views\wrapper.php(38): view('pages/monitoring/meteo1')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 7 APPPATH\Controllers\Monitoring.php(132): view('wrapper', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->meteorologi()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-19 23:21:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/monitoring/report.php"
+[Method: GET, Route: report-laporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/monitoring/report.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/report', [], true)
+ 3 APPPATH\Views\wrapper.php(38): view('pages/monitoring/report')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 7 APPPATH\Controllers\Monitoring.php(94): view('wrapper', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->report()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')

@@ -1,0 +1,1022 @@
+CRITICAL - 2024-11-23 00:01:00 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Monitoring-laporan is not a valid controller name
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Monitoring-lapo...')
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: monitoring-laporan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-23 00:01:00 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Monitoring-laporan is not a valid controller name
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Monitoring-lapo...')
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: monitoring-laporan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:01:59 --> ErrorException: Cannot redeclare App\Controllers\Monitoring::viewmonitoring()
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Controllers\Monitoring.php on line 263.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-23 00:11:56 --> mysqli_sql_exception: Unknown column 'tanggal' in 'where clause' in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-23 00:11:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tanggal' in 'where clause'
+[Method: GET, Route: monitoring-laporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:', [...], false)
+ 2 APPPATH\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:11:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tanggal' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:', [...], false)
+ 4 APPPATH\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:11:56 --> [Caused by] mysqli_sql_exception: Unknown column 'tanggal' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:', [...], false)
+ 5 APPPATH\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+ERROR - 2024-11-23 00:12:35 --> mysqli_sql_exception: Unknown column 'tanggal' in 'where clause' in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-23 00:12:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tanggal' in 'where clause'
+[Method: GET, Route: monitoring-laporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:', [...], false)
+ 2 APPPATH\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:12:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tanggal' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:', [...], false)
+ 4 APPPATH\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:12:35 --> [Caused by] mysqli_sql_exception: Unknown column 'tanggal' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:', [...], false)
+ 5 APPPATH\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-23 00:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-23 00:12:49 --> mysqli_sql_exception: Unknown column 'tanggal' in 'where clause' in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-23 00:12:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tanggal' in 'where clause'
+[Method: GET, Route: monitoring-laporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:', [...], false)
+ 2 APPPATH\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:12:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tanggal' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:', [...], false)
+ 4 APPPATH\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:12:49 --> [Caused by] mysqli_sql_exception: Unknown column 'tanggal' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= \'2024-11-01\'
+AND `tanggal` <= \'2024-11-30\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `meteorologi`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:', [...], false)
+ 5 APPPATH\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:12:49 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Database\Exceptions\DatabaseException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 8)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unknown column 'tanggal' in 'where clause'
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MeteorologiModel.php(61): CodeIgniter\Database\BaseBuilder->get()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(230): App\Models\MeteorologiModel->getFilteredLaporan('2024-11-01', '2024-11-30')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:13:10 --> ErrorException: Undefined variable $getdataMeteo
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Controllers\Monitoring.php on line 237.
+ 1 APPPATH\Controllers\Monitoring.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getdataMeteo', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Monitoring.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:13:10 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(ErrorException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(ErrorException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined variable $getdataMeteo
+#0 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 237)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:14:38 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\pages\monitoring\monitoring1.php on line 230.
+ 1 APPPATH\Views\pages\monitoring\monitoring1.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring1.php', 230)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring1.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/monitoring1', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/monitoring/monitoring1')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(263): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:14:38 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(ErrorException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(ErrorException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+foreach() argument must be of type array|object, string given
+#0 C:\xampp\htdocs\perekaman_data_cuaca\app\Views\pages\monitoring\monitoring1.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp\\htdocs...', 230)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\View\View.php(234): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Common.php(1171): CodeIgniter\View\View->render('pages/monitorin...', Array, true)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Views\wrapper.php(38): view('pages/monitorin...')
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\View\View.php(234): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\Common.php(1171): CodeIgniter\View\View->render('wrapper', Array, true)
+#8 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(263): view('wrapper', Array)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:21:51 --> ErrorException: Undefined array key "laporan"
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Controllers\Monitoring.php on line 263.
+ 1 APPPATH\Controllers\Monitoring.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "laporan"', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Monitoring.php', 263)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:21:59 --> ErrorException: Undefined array key "laporan"
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Controllers\Monitoring.php on line 263.
+ 1 APPPATH\Controllers\Monitoring.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "laporan"', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Monitoring.php', 263)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-23 00:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:22:17 --> ErrorException: Undefined array key "laporan"
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Controllers\Monitoring.php on line 263.
+ 1 APPPATH\Controllers\Monitoring.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "laporan"', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Monitoring.php', 263)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:22:17 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(ErrorException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(ErrorException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined array key "laporan"
+#0 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 263)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:28:04 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: monitoring-laporan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-23 00:28:16 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: monitoring-laporan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-23 00:29:37 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: monitoring-laporan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-23 00:39:41 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-23 00:41:00 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-23 00:41:10 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-23 00:44:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/result.php"
+[Method: POST, Route: monitoring/filter]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/result.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan/result', [], true)
+ 3 APPPATH\Controllers\Monitoring.php(241): view('laporan/result', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-23 00:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:44:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/result.php"
+[Method: POST, Route: monitoring/filter]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/result.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan/result', [], true)
+ 3 APPPATH\Controllers\Monitoring.php(241): view('laporan/result', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:44:42 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\View\Exceptions\ViewException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\View\Exceptions\ViewException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\View\Exceptions\ViewException
+Invalid file: "laporan/result.php"
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/result....')
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Common.php(1171): CodeIgniter\View\View->render('laporan/result', Array, true)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(241): view('laporan/result', Array)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:46:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "monitoring/result.php"
+[Method: POST, Route: monitoring/filter]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoring/result.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('monitoring/result', [], true)
+ 3 APPPATH\Controllers\Monitoring.php(241): view('monitoring/result', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:46:19 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\View\Exceptions\ViewException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\View\Exceptions\ViewException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\View\Exceptions\ViewException
+Invalid file: "monitoring/result.php"
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoring/resu...')
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Common.php(1171): CodeIgniter\View\View->render('monitoring/resu...', Array, true)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(241): view('monitoring/resu...', Array)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:50:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "monitoring/result.php"
+[Method: POST, Route: monitoring/filter]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoring/result.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('monitoring/result', [], true)
+ 3 APPPATH\Controllers\Monitoring.php(241): view('monitoring/result', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:50:31 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\View\Exceptions\ViewException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\View\Exceptions\ViewException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\View\Exceptions\ViewException
+Invalid file: "monitoring/result.php"
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoring/resu...')
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Common.php(1171): CodeIgniter\View\View->render('monitoring/resu...', Array, true)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(241): view('monitoring/resu...', Array)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:52:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "monitoring/result.php"
+[Method: POST, Route: monitoring/filter]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoring/result.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('monitoring/result', [], true)
+ 3 APPPATH\Controllers\Monitoring.php(241): view('monitoring/result', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-23 00:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:52:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "monitoring/result.php"
+[Method: POST, Route: monitoring/filter]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoring/result.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('monitoring/result', [], true)
+ 3 APPPATH\Controllers\Monitoring.php(241): view('monitoring/result', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:53:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "monitoring/result.php"
+[Method: POST, Route: monitoring/filter]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoring/result.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('monitoring/result', [], true)
+ 3 APPPATH\Controllers\Monitoring.php(241): view('monitoring/result', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:53:06 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\View\Exceptions\ViewException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\View\Exceptions\ViewException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\View\Exceptions\ViewException
+Invalid file: "monitoring/result.php"
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoring/resu...')
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Common.php(1171): CodeIgniter\View\View->render('monitoring/resu...', Array, true)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Monitoring.php(241): view('monitoring/resu...', Array)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:55:20 --> Exception: View monitoring/result.php tidak ditemukan.
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Controllers\Monitoring.php on line 241.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:55:20 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Exception), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Exception), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Exception))
+#5 {main}
+  thrown
+【Previous Exception】
+Exception
+View monitoring/result.php tidak ditemukan.
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:57:04 --> Exception: View monitoring/result.php tidak ditemukan.
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Controllers\Monitoring.php on line 242.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 00:57:04 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Exception), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Exception), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Exception))
+#5 {main}
+  thrown
+【Previous Exception】
+Exception
+View monitoring/result.php tidak ditemukan.
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 00:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:59:41 --> Exception: View monitoring/result.php tidak ditemukan.
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Controllers\Monitoring.php on line 242.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-23 00:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 00:59:50 --> Exception: View monitoring/result.php tidak ditemukan.
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Controllers\Monitoring.php on line 242.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-23 00:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 00:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 01:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-23 01:00:08 --> Exception: View monitoring/result.php tidak ditemukan.
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Controllers\Monitoring.php on line 242.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-23 01:00:08 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Exception), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Exception), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Exception))
+#5 {main}
+  thrown
+【Previous Exception】
+Exception
+View monitoring/result.php tidak ditemukan.
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Monitoring->filter()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+[Method: POST, Route: monitoring/filter]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-23 01:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 01:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 01:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 01:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-23 01:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

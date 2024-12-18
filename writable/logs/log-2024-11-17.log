@@ -1,0 +1,489 @@
+CRITICAL - 2024-11-17 09:33:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/ev/ev.php"
+[Method: GET, Route: penguapan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/ev/ev.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/ev/ev', [], true)
+ 3 APPPATH\Views\wrapper.php(38): view('pages/ev/ev')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 7 APPPATH\Controllers\Pengamatan.php(122): view('wrapper', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->penguapan()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-17 10:24:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/mh/mh.php"
+[Method: GET, Route: penyinaran-matahari]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/mh/mh.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/mh/mh', [], true)
+ 3 APPPATH\Views\wrapper.php(38): view('pages/mh/mh')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 7 APPPATH\Controllers\Pengamatan.php(155): view('wrapper', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->matahari()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-17 11:11:22 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 11:34:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/monitoring/monitoring.php"
+[Method: GET, Route: monitoring-laporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/monitoring/monitoring.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/monitoring', [], true)
+ 3 APPPATH\Views\wrapper.php(38): view('pages/monitoring/monitoring')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 7 APPPATH\Controllers\Monitoring.php(55): view('wrapper', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-17 11:34:33 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\pages\monitoring\monitoring.php on line 34.
+ 1 APPPATH\Views\pages\monitoring\monitoring.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataUser', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/monitoring', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/monitoring/monitoring')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(55): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-17 11:34:34 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\pages\monitoring\monitoring.php on line 34.
+ 1 APPPATH\Views\pages\monitoring\monitoring.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataUser', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/monitoring', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/monitoring/monitoring')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(55): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-17 11:35:59 --> ErrorException: Undefined variable $registeredEmails
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\pages\monitoring\monitoring.php on line 154.
+ 1 APPPATH\Views\pages\monitoring\monitoring.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $registeredEmails', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php', 154)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/monitoring', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/monitoring/monitoring')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(55): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-17 11:36:01 --> ErrorException: Undefined variable $registeredEmails
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\pages\monitoring\monitoring.php on line 154.
+ 1 APPPATH\Views\pages\monitoring\monitoring.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $registeredEmails', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php', 154)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/monitoring', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/monitoring/monitoring')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(55): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-17 12:22:20 --> ErrorException: Undefined variable $base_url
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\pages\monitoring\monitoring.php on line 72.
+ 1 APPPATH\Views\pages\monitoring\monitoring.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php', 72)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/monitoring', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/monitoring/monitoring')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(55): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-17 12:22:36 --> ErrorException: Undefined variable $base_url
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\pages\monitoring\monitoring.php on line 72.
+ 1 APPPATH\Views\pages\monitoring\monitoring.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php', 72)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/monitoring', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/monitoring/monitoring')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(55): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-17 12:23:20 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: option2]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:24:12 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporanoption1]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:24:32 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan/option1]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:27:07 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan/option1]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:27:53 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan/option1]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:29:00 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan/data-meteorologi]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:47:48 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan/data-meteorologi]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:48:47 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan/data-meteorologi]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:49:38 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan/data-meteorologi]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:56:18 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan/data-penguapan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:57:49 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan/data-penguapan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 12:58:47 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: monitoring-laporan/data-penguapan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-17 13:37:01 --> ErrorException: Undefined variable $dataUser
+[Method: GET, Route: monitoring-laporan/data-meteorologi]
+in APPPATH\Views\pages\monitoring\meteo.php on line 45.
+ 1 APPPATH\Views\pages\monitoring\meteo.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataUser', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\meteo.php', 45)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\meteo.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/meteo', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/monitoring/meteo')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(97): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->meteorologi()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-17 14:34:30 --> ErrorException: Undefined variable $dataMeteo
+[Method: GET, Route: monitoring-laporan]
+in APPPATH\Views\pages\monitoring\monitoring1.php on line 84.
+ 1 APPPATH\Views\pages\monitoring\monitoring1.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataMeteo', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring1.php', 84)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\monitoring\\monitoring1.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/monitoring/monitoring1', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/monitoring/monitoring1')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(59): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')

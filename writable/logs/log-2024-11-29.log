@@ -1,0 +1,1346 @@
+INFO - 2024-11-29 03:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 03:30:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'perekaman_data', 3306, '', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 03:30:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/valid_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 03:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 03:30:58 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'perekaman_data', 3306, '', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 03:30:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: HEAD, Route: auth/valid_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` IS NULL
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 03:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 03:31:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'perekaman_data', 3306, '', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 03:31:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: HEAD, Route: auth/valid_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` IS NULL
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 03:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 03:31:06 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'perekaman_data', 3306, '', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 03:31:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: HEAD, Route: auth/valid_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` IS NULL
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 03:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 03:31:10 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'perekaman_data', 3306, '', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 03:31:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: HEAD, Route: auth/valid_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` IS NULL
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(44): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 03:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 03:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 04:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 04:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 04:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 04:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 04:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 04:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 04:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 04:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 04:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 04:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-29 05:05:01 --> ParseError: syntax error, unexpected token ")", expecting ";"
+[Method: GET, Route: report-laporan/download/21]
+in APPPATH\Views\pages\report\ev-pdf-view1.php on line 101.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/report/ev-pdf-view1', [], true)
+ 3 APPPATH\Controllers\Report.php(225): view('pages/report/ev-pdf-view1', [...])
+ 4 APPPATH\Controllers\Report.php(172): App\Controllers\Report->generatePdf('data-penyinaran-matahari', '2024-11')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Report->downloadreport('21')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 05:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 05:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-29 05:57:20 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 22.
+ 1 APPPATH\Models\MatahariModel.php(22): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+WARNING - 2024-11-29 05:57:20 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 23.
+ 1 APPPATH\Models\MatahariModel.php(23): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 05:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-29 06:01:13 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 22.
+ 1 APPPATH\Models\MatahariModel.php(22): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+WARNING - 2024-11-29 06:01:13 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 23.
+ 1 APPPATH\Models\MatahariModel.php(23): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 06:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-29 06:29:40 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 22.
+ 1 APPPATH\Models\MatahariModel.php(22): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+WARNING - 2024-11-29 06:29:40 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 23.
+ 1 APPPATH\Models\MatahariModel.php(23): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 06:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-29 06:42:14 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 22.
+ 1 APPPATH\Models\MatahariModel.php(22): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+WARNING - 2024-11-29 06:42:14 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 23.
+ 1 APPPATH\Models\MatahariModel.php(23): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 06:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 06:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 07:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 07:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 07:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 10:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-29 11:02:56 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 22.
+ 1 APPPATH\Models\MatahariModel.php(22): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+WARNING - 2024-11-29 11:02:56 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 23.
+ 1 APPPATH\Models\MatahariModel.php(23): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:14:38 --> mysqli_sql_exception: Column '8jml' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:14:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Column '8jml' cannot be null
+[Method: POST, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column '8jml' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (\'2024-11-01\', \'0\', \'0\', \'1\', \'1\', \'1\', \'1\', \'1\', \'0.5\', \'0.3\', \'0.4\', \'0\', \'0\', NULL, NULL, NULL, NULL, \'97142\', \'Administrator\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (\'2024-11-01\', \'0\', \'0\', \'1\', \'1\', \'1\', \'1\', \'1\', \'0.5\', \'0.3\', \'0.4\', \'0\', \'0\', NULL, NULL, NULL, NULL, \'97142\', \'Administrator\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] mysqli_sql_exception: Column '8jml' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (\'2024-11-01\', \'0\', \'0\', \'1\', \'1\', \'1\', \'1\', \'1\', \'0.5\', \'0.3\', \'0.4\', \'0\', \'0\', NULL, NULL, NULL, NULL, \'97142\', \'Administrator\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (\'2024-11-01\', \'0\', \'0\', \'1\', \'1\', \'1\', \'1\', \'1\', \'0.5\', \'0.3\', \'0.4\', \'0\', \'0\', NULL, NULL, NULL, NULL, \'97142\', \'Administrator\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (\'2024-11-01\', \'0\', \'0\', \'1\', \'1\', \'1\', \'1\', \'1\', \'0.5\', \'0.3\', \'0.4\', \'0\', \'0\', NULL, NULL, NULL, NULL, \'97142\', \'Administrator\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:14:38 --> mysqli_sql_exception: Column 'tanggal' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:14:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+[Method: HEAD, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] mysqli_sql_exception: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:14:38 --> mysqli_sql_exception: Column 'tanggal' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:14:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+[Method: HEAD, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] mysqli_sql_exception: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:14:38 --> mysqli_sql_exception: Column 'tanggal' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:14:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+[Method: HEAD, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] mysqli_sql_exception: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:14:38 --> mysqli_sql_exception: Column 'tanggal' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:14:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+[Method: HEAD, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] mysqli_sql_exception: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:14:38 --> mysqli_sql_exception: Column 'tanggal' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:14:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+[Method: HEAD, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:14:38 --> [Caused by] mysqli_sql_exception: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:15:05 --> mysqli_sql_exception: Column '8jml' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:15:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Column '8jml' cannot be null
+[Method: POST, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column '8jml' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (\'2024-11-01\', \'0\', \'0\', \'1\', \'1\', \'1\', \'1\', \'1\', \'0.5\', \'0.3\', \'0.4\', \'0\', \'0\', NULL, NULL, NULL, NULL, \'97142\', \'Administrator\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (\'2024-11-01\', \'0\', \'0\', \'1\', \'1\', \'1\', \'1\', \'1\', \'0.5\', \'0.3\', \'0.4\', \'0\', \'0\', NULL, NULL, NULL, NULL, \'97142\', \'Administrator\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:05 --> [Caused by] mysqli_sql_exception: Column '8jml' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (\'2024-11-01\', \'0\', \'0\', \'1\', \'1\', \'1\', \'1\', \'1\', \'0.5\', \'0.3\', \'0.4\', \'0\', \'0\', NULL, NULL, NULL, NULL, \'97142\', \'Administrator\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (\'2024-11-01\', \'0\', \'0\', \'1\', \'1\', \'1\', \'1\', \'1\', \'0.5\', \'0.3\', \'0.4\', \'0\', \'0\', NULL, NULL, NULL, NULL, \'97142\', \'Administrator\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (\'2024-11-01\', \'0\', \'0\', \'1\', \'1\', \'1\', \'1\', \'1\', \'0.5\', \'0.3\', \'0.4\', \'0\', \'0\', NULL, NULL, NULL, NULL, \'97142\', \'Administrator\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:05 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Database\Exceptions\DatabaseException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 8)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Column '8jml' cannot be null
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+[Method: POST, Route: pengamatan/addmatahari]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-29 11:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:15:05 --> mysqli_sql_exception: Column 'tanggal' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:15:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+[Method: HEAD, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:05 --> [Caused by] mysqli_sql_exception: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:15:05 --> mysqli_sql_exception: Column 'tanggal' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:15:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+[Method: HEAD, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:05 --> [Caused by] mysqli_sql_exception: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:15:06 --> mysqli_sql_exception: Column 'tanggal' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:15:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+[Method: HEAD, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:06 --> [Caused by] mysqli_sql_exception: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:15:06 --> mysqli_sql_exception: Column 'tanggal' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:15:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+[Method: HEAD, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:06 --> [Caused by] mysqli_sql_exception: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-29 11:15:06 --> mysqli_sql_exception: Column 'tanggal' cannot be null in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData(Array)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-29 11:15:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+[Method: HEAD, Route: pengamatan/addmatahari]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 2 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 4 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-29 11:15:06 --> [Caused by] mysqli_sql_exception: Column 'tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'97142\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matahari` (`tanggal`, `6_7`, `7_8`, `8_9`, `9_10`, `10_11`, `11_12`, `12_13`, `13_14`, `14_15`, `15_16`, `16_17`, `17_18`, `8jml`, `8persen`, `12jml`, `12persen`, `id_station`, `observer`) VALUES (:tanggal:, :6_7:, :7_8:, :8_9:, :9_10:, :10_11:, :11_12:, :12_13:, :13_14:, :14_15:, :15_16:, :16_17:, :17_18:, :8jml:, :8persen:, :12jml:, :12persen:, :id_station:, :observer:)', [...], false)
+ 5 APPPATH\Models\MatahariModel.php(39): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Pengamatan.php(210): App\Models\MatahariModel->addData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->addmatahari()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-29 11:16:51 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 22.
+ 1 APPPATH\Models\MatahariModel.php(22): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+WARNING - 2024-11-29 11:16:51 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 23.
+ 1 APPPATH\Models\MatahariModel.php(23): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-29 11:42:54 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 22.
+ 1 APPPATH\Models\MatahariModel.php(22): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+WARNING - 2024-11-29 11:42:54 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Models\MatahariModel.php on line 23.
+ 1 APPPATH\Models\MatahariModel.php(23): strtotime(null)
+ 2 APPPATH\Controllers\Monitoring.php(197): App\Models\MatahariModel->filterByBulan(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Monitoring->matahari()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-29 11:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-29 11:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

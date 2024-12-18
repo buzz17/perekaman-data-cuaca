@@ -1,0 +1,1575 @@
+CRITICAL - 2024-11-14 00:16:34 --> ErrorException: Undefined variable $sessLogin
+[Method: GET, Route: administrator/]
+in APPPATH\Views\layouts\sidebar.php on line 2.
+ 1 APPPATH\Views\layouts\sidebar.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sessLogin', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\layouts\\sidebar.php', 2)
+ 2 APPPATH\Views\wrapper.php(7): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\layouts\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 6 APPPATH\Controllers\Beranda.php(50): view('wrapper', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda->administrator()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 00:16:53 --> ErrorException: Undefined variable $session
+[Method: GET, Route: administrator/]
+in APPPATH\Views\layouts\sidebar.php on line 2.
+ 1 APPPATH\Views\layouts\sidebar.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\layouts\\sidebar.php', 2)
+ 2 APPPATH\Views\wrapper.php(7): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\layouts\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 6 APPPATH\Controllers\Beranda.php(50): view('wrapper', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda->administrator()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 00:25:02 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: form/general]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 00:36:15 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: dashboard]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 01:31:13 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: administrator/meteorologi]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 01:31:42 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: meteorologi]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 01:32:20 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: meteorologi]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 01:36:49 --> ErrorException: Undefined variable $active
+[Method: GET, Route: meteorologi]
+in APPPATH\Views\layouts\sidebar.php on line 31.
+ 1 APPPATH\Views\layouts\sidebar.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\layouts\\sidebar.php', 31)
+ 2 APPPATH\Views\wrapper.php(7): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\layouts\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 6 APPPATH\Controllers\Pengamatan.php(50): view('wrapper', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->meteorologi()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 01:42:25 --> ErrorException: Undefined variable $menu
+[Method: GET, Route: meteorologi]
+in APPPATH\Views\layouts\sidebar.php on line 31.
+ 1 APPPATH\Views\layouts\sidebar.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menu', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\layouts\\sidebar.php', 31)
+ 2 APPPATH\Views\wrapper.php(7): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\layouts\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 6 APPPATH\Controllers\Pengamatan.php(54): view('wrapper', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->meteorologi()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 01:49:18 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: 1]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 01:49:39 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: 1]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 01:50:49 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: 1]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 01:57:22 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: curah-hujan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 02:15:26 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: penguapan]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 02:19:13 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: penyinaran-matahari]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 02:19:28 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: penyinaran-matahari]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 02:40:35 --> ErrorException: Undefined variable $session_role
+[Method: GET, Route: administrator]
+in APPPATH\Views\layouts\navbar.php on line 15.
+ 1 APPPATH\Views\layouts\navbar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session_role', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\layouts\\navbar.php', 15)
+ 2 APPPATH\Views\wrapper.php(6): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\layouts\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 6 APPPATH\Controllers\Beranda.php(55): view('wrapper', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda->administrator()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 02:57:46 --> ErrorException: Undefined array key "id_station"
+[Method: POST, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_station"', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 02:57:46 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 02:57:46 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 02:57:46 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 02:57:46 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 02:57:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:12 --> ErrorException: Undefined array key "id_station"
+[Method: POST, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_station"', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:12 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:12 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:12 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:13 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:57 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 55.
+ 1 APPPATH\Controllers\Auth.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:57 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:57 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:57 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:57 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:08:57 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:09:20 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 55.
+ 1 APPPATH\Controllers\Auth.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:09:20 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(ErrorException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(ErrorException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined array key "id"
+#0 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#6 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+[Method: POST, Route: auth/valid_login]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-14 03:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:09:20 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:09:20 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:09:20 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:09:20 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:09:20 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-14 03:10:46 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `user` S...', 0)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` S...')
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` S...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `user` S...', Array, false)
+#4 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\UserModel.php(35): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(72): App\Models\UserModel->updateData(Array, NULL)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-14 03:10:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: POST, Route: auth/valid_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `user` SET `login` = :login:
+WHERE `id` IS NULL', [...], false)
+ 2 APPPATH\Models\UserModel.php(35): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 3 APPPATH\Controllers\Auth.php(72): App\Models\UserModel->updateData([...], null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:10:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` SET `login` = \'2024-11-14 3:10:46\'
+WHERE `id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` SET `login` = \'2024-11-14 3:10:46\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `user` SET `login` = :login:
+WHERE `id` IS NULL', [...], false)
+ 4 APPPATH\Models\UserModel.php(35): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 5 APPPATH\Controllers\Auth.php(72): App\Models\UserModel->updateData([...], null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:10:46 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `user` SET `login` = \'2024-11-14 3:10:46\'
+WHERE `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` SET `login` = \'2024-11-14 3:10:46\'
+WHERE `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` SET `login` = \'2024-11-14 3:10:46\'
+WHERE `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `user` SET `login` = :login:
+WHERE `id` IS NULL', [...], false)
+ 5 APPPATH\Models\UserModel.php(35): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 6 APPPATH\Controllers\Auth.php(72): App\Models\UserModel->updateData([...], null)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:10:46 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::cleanPath() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_exception.php:33
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Database\Exceptions\DatabaseException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 8)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Database\Exceptions\DatabaseException
+Unknown column 'id' in 'where clause'
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `user` S...', Array, false)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\app\Models\UserModel.php(35): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#2 C:\xampp\htdocs\perekaman_data_cuaca\app\Controllers\Auth.php(72): App\Models\UserModel->updateData(Array, NULL)
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+#4 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+[Method: POST, Route: auth/valid_login]
+in APPPATH\Views\errors\html\error_exception.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-14 03:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:10:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:10:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:10:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:10:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:10:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+INFO - 2024-11-14 03:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 03:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 03:25:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:56 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:56 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:56 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:56 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:56 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 03:25:56 --> ErrorException: Trying to access array offset on value of type null
+[Method: HEAD, Route: auth/valid_login]
+in APPPATH\Controllers\Auth.php on line 40.
+ 1 APPPATH\Controllers\Auth.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Controllers\\Auth.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->valid_login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 05:36:31 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: kelola-pengguna]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 05:36:57 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: kelola-pengguna]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 05:37:35 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: kelola-pengguna]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 05:37:40 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 05:38:05 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 05:38:29 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 05:38:32 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 05:38:40 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 05:38:44 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 05:39:20 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Controller or its method is not found: \App\Controllers\User::monitoring
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Controller or i...')
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-14 05:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-14 05:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-14 06:43:12 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: user/add]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 06:58:45 --> ErrorException: Undefined property: stdClass::$id
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\pages\pengguna\monitoring.php on line 64.
+ 1 APPPATH\Views\pages\pengguna\monitoring.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\pengguna\\monitoring.php', 64)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\pengguna\\monitoring.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/pengguna/monitoring', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/pengguna/monitoring')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\User.php(56): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 07:00:26 --> ErrorException: Undefined property: stdClass::$id
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\pages\pengguna\monitoring.php on line 64.
+ 1 APPPATH\Views\pages\pengguna\monitoring.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\pengguna\\monitoring.php', 64)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\pengguna\\monitoring.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/pengguna/monitoring', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/pengguna/monitoring')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\User.php(56): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 07:02:24 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: user/add]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 07:02:58 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: POST, Route: user/add]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 07:03:00 --> ErrorException: Undefined property: stdClass::$id
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\pages\pengguna\monitoring.php on line 67.
+ 1 APPPATH\Views\pages\pengguna\monitoring.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\pengguna\\monitoring.php', 67)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\pengguna\\monitoring.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/pengguna/monitoring', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/pengguna/monitoring')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\User.php(56): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 07:03:03 --> ErrorException: Undefined property: stdClass::$id
+[Method: GET, Route: administrator/kelola-pengguna]
+in APPPATH\Views\pages\pengguna\monitoring.php on line 67.
+ 1 APPPATH\Views\pages\pengguna\monitoring.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\pengguna\\monitoring.php', 67)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\pages\\pengguna\\monitoring.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/pengguna/monitoring', [], true)
+ 5 APPPATH\Views\wrapper.php(38): view('pages/pengguna/monitoring')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 9 APPPATH\Controllers\User.php(56): view('wrapper', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->monitoring()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
+CRITICAL - 2024-11-14 08:01:20 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: administrator/tambah-user/berhasil]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:05:03 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: administrator/tambah-user/berhasil]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:05:47 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: user/]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:06:01 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: user/]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:06:05 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: user/]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:06:07 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: user/]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:08:21 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: user/]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:08:46 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: user/]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:32:11 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: Observer]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:32:34 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: Observer]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:33:05 --> ErrorException: Uncaught Error: Call to undefined method CodeIgniter\Debug\ExceptionHandler::extend() in C:\xampp\htdocs\perekaman_data_cuaca\app\Views\errors\html\error_404.php:1
+Stack trace:
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(266): include()
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\ExceptionHandler.php(114): CodeIgniter\Debug\BaseExceptionHandler->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404, 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Debug\Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\PageNotFoundException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 404, 1)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#5 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\PageNotFoundException
+Page Not Found
+#0 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(981): CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(NULL)
+#1 C:\xampp\htdocs\perekaman_data_cuaca\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#3 C:\xampp\htdocs\perekaman_data_cuaca\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#4 C:\xampp\htdocs\perekaman_data_cuaca\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#5 C:\xampp\htdocs\perekaman_data_cuaca\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+[Method: GET, Route: Observer]
+in APPPATH\Views\errors\html\error_404.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-14 08:48:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/meteorologi/meteo.php"
+[Method: GET, Route: meteorologi]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/meteorologi/meteo.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/meteorologi/meteo', [], true)
+ 3 APPPATH\Views\wrapper.php(38): view('pages/meteorologi/meteo')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perekaman_data_cuaca\\app\\Views\\wrapper.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('wrapper', [], true)
+ 7 APPPATH\Controllers\Pengamatan.php(56): view('wrapper', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pengamatan->meteorologi()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengamatan))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\perekaman_data_cuaca\\public\\index.php')
